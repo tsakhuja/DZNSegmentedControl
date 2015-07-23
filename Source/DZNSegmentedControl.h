@@ -52,14 +52,11 @@
 /** YES if the font size should be reduced in order to fit the title string into the segment's width. Default is NO. */
 @property (nonatomic) BOOL adjustsFontSizeToFitWidth;
 
-/** */
-@property (nonatomic, assign) CGPoint scrollOffset;
-
 /**
  Initializes and returns a segmented control with segments having the given titles or images.
  The returned segmented control is automatically sized to fit its content within the width of its superview.
  If items is nil, the control will still be created but expecting titles and counts to be assigned.
- 
+
  @params items An array of NSString objects only.
  @returns A DZNSegmentedControl object or nil if there was a problem in initializing the object.
  */
@@ -67,7 +64,7 @@
 
 /**
  Sets the tint color of a segment.
- 
+
  @param tintColor A color to rendered for the segment's background color.
  @param segment An index number identifying a segment in the control. It must be a number between 0 and the number of segments (numberOfSegments) minus 1; values exceeding this upper range are pinned to it.
  */
@@ -75,7 +72,7 @@
 
 /**
  Sets the title of a segment.
- 
+
  @param title A string to display in the segment as its title.
  @param segment An index number identifying a segment in the control. It must be a number between 0 and the number of segments (numberOfSegments) minus 1; values exceeding this upper range are pinned to it.
  */
@@ -83,7 +80,7 @@
 
 /**
  Sets the title color for a particular state.
- 
+
  @param color A color to be rendered for each the segment's state.
  @param state The state that uses the styled title. The possible values are described in UIControlState.
  */
@@ -91,7 +88,7 @@
 
 /**
  Sets the count of a segment.
- 
+
  @param count A number to display in the segment as its count.
  @param segment An index number identifying a segment in the control. It must be a number between 0 and the number of segments (numberOfSegments) minus 1; values exceeding this upper range are pinned to it.
  */
@@ -99,7 +96,7 @@
 
 /**
  Enables the specified segment.
- 
+
  @param enabled YES to enable the specified segment or NO to disable the segment. By default, segments are enabled.
  @param segment An index number identifying a segment in the control. It must be a number between 0 and the number of segments (numberOfSegments) minus 1; values exceeding this upper range are pinned to it.
  */
@@ -107,7 +104,7 @@
 
 /**
  Returns the title of the specified segment.
- 
+
  @param segment An index number identifying a segment in the control. It must be a number between 0 and the number of segments (numberOfSegments) minus 1; values exceeding this upper range are pinned to it.
  @returns Returns the string (title) assigned to the receiver as content. If no title has been set, it returns nil.
  */
@@ -115,7 +112,7 @@
 
 /**
  Returns the count of the specified segment.
- 
+
  @param segment An index number identifying a segment in the control. It must be a number between 0 and the number of segments (numberOfSegments) minus 1; values exceeding this upper range are pinned to it.
  @returns Returns the number (count) assigned to the receiver as content. If no count has been set, it returns 0.
  */
