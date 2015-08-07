@@ -633,8 +633,8 @@
 {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
 
-    [button addTarget:self action:@selector(willSelectedButton:) forControlEvents:UIControlEventTouchDown];
-    [button addTarget:self action:@selector(didSelectButton:) forControlEvents:UIControlEventTouchDragOutside|UIControlEventTouchDragInside|UIControlEventTouchDragEnter|UIControlEventTouchDragExit|UIControlEventTouchCancel|UIControlEventTouchUpInside|UIControlEventTouchUpOutside];
+    [button addTarget:self action:@selector(willSelectedButton:) forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:self action:@selector(didSelectButton:) forControlEvents:UIControlEventTouchUpInside];
 
     button.backgroundColor = nil;
     button.opaque = YES;
